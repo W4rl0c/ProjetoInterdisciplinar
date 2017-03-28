@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Guia Social - Login</title>
+      <!-- Bootstrap core CSS -->
+      <link href="./css/font-awesome.min.css" rel="stylesheet">
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <h1 class="welcome text-center">Bem Vindo <br> Ao Guia Social</h1>
+         <div class="card card-container">
+            <h2 class='login_title text-center'>Login</h2>
+            <hr>
+			Email ou senha inválidos.
+            <form action="./php/login.php" method="POST" class="form-signin">
+               <span id="reauth-email" class="reauth-email"></span>
+               <p class="input_title">Email</p>
+               <input type="text" name="login" id="login" class="login_box" placeholder="email@email.com" required autofocus>
+               <p class="input_title">Senha</p>
+               <input type="password" name="senha" id="senha" class="login_box" placeholder="******" required>
+               <div id="remember" class="checkbox">
+                  <label>
+                  </label>
+               </div>
+               <button id="btnEntrar" class="btn btn-lg btn-primary" type="submit">Login</button>
+            </form>
+            <!-- /form -->
+         </div>
+         <!-- /card-container -->
+      </div>
+      <!-- /container -->
+      <script src="./js/bootstrap.min.js"></script>
+   </body>
+</html>
